@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "4d6fe13b-61bc-43fb-a9de-2117947a1b7a",
+		"name": "socket_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:2500/api/registration/v1/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"socket_auth_username\" : \"jayisaac0\",\n\t\"socket_auth_useremail\" : \"jayisaac0@gmail.com\",\n\t\"socket_auth_userpassword\" : \"Jayluv3139\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/registration/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"registration",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2500/api/auth/v1/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"socket_auth_useremail\" : \"jayisaac0@gmail.com\",\n\t\"socket_auth_userpassword\" : \"Jayluv3139\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/auth/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"auth",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2500/api/profile/v1/1573090187504",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb2NrZXRfYXV0aF91c2Vyc19wdWJsaWNfaWQiOiIxNTczMDkwMTg3NTA0Iiwic29ja2V0X2F1dGhfdXNlcl9wcmltYXJ5X3ByaXZpbGFnZXMiOmZhbHNlLCJzb2NrZXRfYXV0aF91c2VyZW1haWwiOiJqYXlpc2FhYzBAZ21haWwuY29tIiwiaWF0IjoxNTczMTE5MzkzfQ.Wj5scNktuOQcDTMGssEJSARdLEY1Oj8q7YrKv531isk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"socket_auth_users_public_id\": \"1573156712547\",\n\t\"socket_auth_user_first_name\": \"Mathew\",\n\t\"socket_auth_user_middle_name\": \"Ballor\",\n\t\"socket_auth_user_last_name\": \"Tim\",\n\t\"socket_auth_user_country\": \"United states\",\n\t\"socket_auth_user_state\": \"Washington DC\",\n\t\"socket_auth_user_precise_location\": \"5th avenue\",\n\t\"socket_auth_user_contact\": \"+1234344543\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/profile/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"profile",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2500/api/profile/v1/1573090187504",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb2NrZXRfYXV0aF91c2Vyc19wdWJsaWNfaWQiOiIxNTczMTU2NzEyNTQ3Iiwic29ja2V0X2F1dGhfdXNlcl9wcmltYXJ5X3ByaXZpbGFnZXMiOmZhbHNlLCJzb2NrZXRfYXV0aF91c2VyZW1haWwiOiJqYXlpc2FhYzBAZ21haWwuY29tIiwiaWF0IjoxNTczMTU2NzI0fQ.33IDxNvZyjHp5YYeGf9-vr3nwiQYWS2yId089NkrEhE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"socket_auth_user_first_name\": \"Mathew\",\n\t\"socket_auth_user_middle_name\": \"Ballor\",\n\t\"socket_auth_user_last_name\": \"Tim\",\n\t\"socket_auth_user_country\": \"United states\",\n\t\"socket_auth_user_state\": \"Washington DC\",\n\t\"socket_auth_user_precise_location\": \"5th avenue\",\n\t\"socket_auth_user_contact\": \"+1234344543\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/profile/v1/1573090187504",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"profile",
+						"v1",
+						"1573090187504"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
